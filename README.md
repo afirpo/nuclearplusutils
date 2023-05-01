@@ -19,3 +19,6 @@ This little [and frankly obtuse] mod will:
  
  All the credits goes to NotoriousPyro, of course, for his/her amazing work!
  
+### How to install?
+
+Simply un-zip the released archive into the folder **%UserProfile%\Documents\Captain of Industry\Mods**.
