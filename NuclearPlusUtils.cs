@@ -94,14 +94,15 @@ namespace NuclearPlusUtils
       {
         new QuickTradePairProto(QuickTrades.UraniumPelletsTrade
         , new ProductQuantity(registrator.PrototypesDb.GetOrThrow<ProductProto>(Ids.Products.Gold), 10.Quantity())
-        , new ProductQuantity(registrator.PrototypesDb.GetOrThrow<ProductProto>(Ids.Products.UraniumPellets), 10.Quantity())
+        , new ProductQuantity(registrator.PrototypesDb.GetOrThrow<ProductProto>(Ids.Products.UraniumReprocessed), 10.Quantity())
         , 0.5.Upoints()
         , 1
         , 1
         , 1
         , 0.Seconds()
         , 0.Percent()
-        , 0.Percent()),
+        , 0.Percent()
+        , true),
 
         new QuickTradePairProto(QuickTrades.UraniumRodsTrade
         , new ProductQuantity(registrator.PrototypesDb.GetOrThrow<ProductProto>(Ids.Products.Gold), 20.Quantity())
@@ -112,7 +113,8 @@ namespace NuclearPlusUtils
         , 1
         , 0.Seconds()
         , 0.Percent()
-        , 0.Percent()),
+        , 0.Percent()
+        , true),
 
         new QuickTradePairProto(QuickTrades.PlutoniumPelletsTrade
         , new ProductQuantity(registrator.PrototypesDb.GetOrThrow<ProductProto>(Ids.Products.Gold), 20.Quantity())
@@ -123,7 +125,8 @@ namespace NuclearPlusUtils
         , 1
         , 0.Seconds()
         , 0.Percent()
-        , 0.Percent()),
+        , 0.Percent()
+        , true),
 
         new QuickTradePairProto(QuickTrades.PlutoniumRodsTrade
         , new ProductQuantity(registrator.PrototypesDb.GetOrThrow<ProductProto>(Ids.Products.Gold), 30.Quantity())
@@ -134,7 +137,8 @@ namespace NuclearPlusUtils
         , 1
         , 0.Seconds()
         , 0.Percent()
-        , 0.Percent())
+        , 0.Percent()
+        , true)
       };
 
       tradeVillage.QuickTrades = ImmutableArray.CreateRange(trades);
